@@ -861,6 +861,7 @@ display: none;
 }
 .abtpara p {
     line-height: 20px;
+    font-size: 14px;
 }
 .skills {
     width: 100%;
