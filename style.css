@@ -46,7 +46,7 @@ a{
 .name h1{
     font-size: 65px;
 }
-.name p{
+.name .contactme{
     border:2px solid #0087ca;
     width:150px;
     height:50px;
@@ -57,7 +57,8 @@ a{
     color:#0087ca;
     border-radius: 10px;
 }
-.name p:hover{
+
+.name .contactme:hover{
     background-color: #0087ca;
     color:white;
     transition: .3s;
@@ -228,9 +229,10 @@ display: none;
     align-items: center;
     flex-direction: column;
 }
-#about h1{
+#about h1,.prohead,.cerhead,.contactheading{
     color:white;
     font-size: 30px;
+    text-align: center;
 
 }
 .abtcontainer{
@@ -386,15 +388,11 @@ display: none;
 
 /* project start */
 #projects{
-    height:160vh;
+    height:140vh;
     width:90%;
     margin:0px auto;
 }
-.prohead{
-    text-align: center;
-    color:white;
-    font-size: 30px;
-}
+
 .projectscontainer{
     width:90%;
     height:80%;
@@ -405,9 +403,10 @@ display: none;
     flex-wrap: wrap;
 }
 .cards{
-    height:45%;
+    height:40%;
     width:25%;
     border:2px solid rgb(0, 0, 0);
+    margin:20px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -445,12 +444,110 @@ display: none;
 }
 /* project end */
 
+/* certifications */
+#certifications{
+    width:90%;
+    height:60vh;
+    margin:0px auto;
+}
 
+.certificatecontainer{
+    height:60%;
+    width:90%;
+    margin:10px auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.certificatecontainer div{
+    border:2px solid white;
+    height:80%;
+    width:30%;
+}
+.certificatecontainer div img{
+    height:100%;
+    width:100%;
+}
+.effect{
+    transform:scale(1.1);
+    border:2px solid black;
+   
+}
+.certificatecontainer div img:hover{
+    transform:scale(1.1);
+    box-shadow: rgba(12, 70, 133, 0.545)  0px 1px 36px 0px, rgba(39, 38, 38, 0.896) 0px 0px 0px 1px;   
+}
+/* contacts */
+#contact{
+    width:90%;
+    height:100vh;
+    margin:0px auto;
+}
+.contactcontainer{
+    width:90%;
+    height:70%;
+    border:2px solid #0087ca2e;
+    background-color: #0087ca11;
+    margin:0px auto;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(12, 70, 133, 0.545)  0px 1px 36px 0px, rgba(39, 38, 38, 0.896) 0px 0px 0px 1px;   
+
+}
+.contactcontainer div{
+    margin:20px auto;
+}
+.lname{
+    width:80%;
+    height:80px;
+}
+.lname label{
+    color:white;
+    font-size: 20px;
+}
+.input-area{
+    width:90%;
+    height:30px;
+}
+.message-area{
+    height:70px;
+    width:90%;
+}
+.submitbtn{
+    background-color: transparent;
+    border: 2px solid #0087ca;
+    width:200px;
+    height:50px;
+    color:#0087ca;
+    font-size: 20px;
+    border-radius: 15px;  
+}
+.submitbtn:hover{
+    background-color: #0087ca;
+    color:white;
+    transition: .4s;
+    cursor:pointer
+}
 
 /* 1200 min media */
 @media (min-width: 1200px) {
     .resume {
        margin-bottom:10px;
+    }
+    .cards{
+        height:58%;
+    }
+    #certifications{
+        margin-top:20vh;
+    }
+    .smallprofile {
+        top: 0%;
+       
+    }
+    .contactcontainer{
+        height:80%;
     }
 }
 
@@ -500,19 +597,21 @@ display: none;
         box-shadow: rgba(12, 70, 133, 0.545)  0px 0px 36px 0px, rgba(39, 38, 38, 0.896) 0px 0px 0px 1px;
     }
     #about{
-        border:2px solid white;
         height:160vh;
     }
     .projectname {
        font-size: 20px;
     }
     .cards {
-        height: 50%;
+        height: 54%;
         width: 30%;
         margin: 15px 0px;
     }
     .desc {
      font-size: 15px;
+    }
+    .contactcontainer {
+        height: 75%;
     }
   
 }
@@ -577,7 +676,8 @@ display: none;
     .smallprofile {
         width: 100px;
         height: 100px;
-        left:0px;
+        left:-5px;
+        top:-15px
     }
     .skills {
         width: 70%;
@@ -592,6 +692,24 @@ display: none;
     }
     .desc {
         font-size: 15px;
+    }
+    #certifications {
+        margin-top:60vh;
+    }
+    #contact{
+        margin-top:-10vh;
+    }
+    .contactcontainer {
+        height: 74%;
+    }
+    .lname label {
+        font-size: 16px;
+    }
+    .contactcontainer div {
+        margin: 16px auto;
+    }
+    .submitbtn {
+        font-size: 16px;
     }
 
 }
@@ -730,12 +848,39 @@ display: none;
 }
 .cards{
     width:70%;
-    height:50%;
+    height:54%;
     margin:15px 0px;
 }
 .projectname {
   font-size: 20px;
 }
+#certifications {
+    margin-top: 265vh;
+}
+.certificatecontainer div{
+    margin:15px 0px;
+    height:80%;
+    width:75%;
+}
+#contact{
+    margin-top:60vh;
+}
+.lname label {
+    font-size: 14px;
+}
+.contactcontainer div {
+    margin: 15px auto;
+}
+.submitbtn {
+    background-color: transparent;
+    border: 2px solid #0087ca;
+    width: 150px;
+    height: 50px;
+    color: #0087ca;
+    font-size: 14px;
+
+}
+
 }
 
 
@@ -845,7 +990,7 @@ display: none;
     margin-top:90vh;
    height:190vh;
  }
- #about h1 {
+ #about h1,.prohead,.cerhead,.contactheading {
     color: white;
     font-size: 25px;
 }
@@ -878,12 +1023,11 @@ display: none;
 .java .outer, .javascript .outer, .python .outer, .spring .outer, .react .outer, .html .outer {
     width: 100%;
 }
-.prohead {
-    font-size: 25px;
-}
+
 .cards{
     width:100%;
     margin:15px 0px;
+    height:54%;
 }
 .projectname {
    font-size: 18px;
@@ -893,6 +1037,33 @@ display: none;
 }
 .prolink {
    font-size: 14px;
+}
+#certifications {
+    margin-top: 270vh;
+}
+
+.certificatecontainer div{
+    margin:15px 0px;
+    height:80%;
+    width:90%;
+}
+#contact{
+    margin-top:55vh;
+}
+.lname label {
+    font-size: 14px;
+}
+.contactcontainer div {
+    margin: 15px auto;
+}
+.submitbtn {
+    background-color: transparent;
+    border: 2px solid #0087ca;
+    width: 120px;
+    height: 40px;
+    color: #0087ca;
+    font-size: 12px;
+
 }
 }
 
