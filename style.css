@@ -276,7 +276,7 @@ display: none;
 }
 /* skills start */
 .skills{
-    width:32%;
+    width:60%;
     height:100vh;
     position:relative;  
      top:-10vh;  
@@ -294,24 +294,26 @@ display: none;
     margin:0px auto;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: space-around;
+    border:2px solid white;
    
 }
 .java,.javascript,.python
-,.spring,.react,.html{
-    width:90%;
-    height:50px;
+,.spring,.react,.html,.cs,.asp{
+    width:70%;
+    height:30px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
 .java p,.javascript p,.python p,
-.spring p,.react p,.html p{
+.spring p,.react p,.html p,.cs p,.asp p{
     color:white;
 }
-.java .outer,.javascript .outer,.python .outer,.spring .outer,.react .outer,.html .outer{
+.java .outer,.javascript .outer,.python .outer,.spring .outer,.react .outer,.html .outer,.cs .outer,.asp .outer{
     width:70%;
     height:12px;
     border: 2px solid white;
@@ -320,6 +322,17 @@ display: none;
 .java .inner{
     width:80%;
     background-color: rgb(255, 115, 0);
+    border-radius: 10px;
+    height:12px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cs .inner{
+    width:80%;
+    background-color: rgb(18, 66, 156);
     border-radius: 10px;
     height:12px;
     font-size: 15px;
@@ -339,7 +352,18 @@ display: none;
     align-items: center;
     justify-content: center;
 }
-.python .inner{
+.asp .inner{
+    width:75%;
+    background-color: rgb(163, 124, 56);
+    border-radius: 10px;
+    height:12px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .python .inner{
     width:70%;
     background-color: rgb(6, 124, 45);
     border-radius: 10px;
@@ -349,7 +373,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .spring .inner{
     width:70%;
     background-color: rgb(13, 193, 73);
