@@ -282,6 +282,8 @@ display: none;
      top:-10vh;  
     background-color: black;
     box-shadow: rgba(12, 70, 133, 0.545)  0px 0px 36px 0px, rgba(39, 38, 38, 0.896) 0px 0px 0px 1px;
+    border:2px solid white;
+    padding-bottom: 30px;
 
 }
 .skillheading{
@@ -294,10 +296,10 @@ display: none;
     margin:0px auto;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    border:2px solid white;
+   
    
 }
 .java,.javascript,.python
@@ -363,7 +365,7 @@ display: none;
     align-items: center;
     justify-content: center;
 }
-/* .python .inner{
+.python .inner{
     width:70%;
     background-color: rgb(6, 124, 45);
     border-radius: 10px;
@@ -373,7 +375,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 .spring .inner{
     width:70%;
     background-color: rgb(13, 193, 73);
